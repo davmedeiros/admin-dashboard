@@ -60,10 +60,30 @@ aside {
 
 .branding > img {
   height: 100%;
-  width: auto;
+  place-self: center;
 }
 
 h1 {
   font-size: 1.8rem;
   padding: 10px;
 }
+
+nav menu {
+  list-style: none;
+}
+
+aside a {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  grid-template: 50px / 50px 1fr;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+aside a img {
+  height: 50%;
+  place-self: center;
+}
+
