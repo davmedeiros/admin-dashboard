@@ -96,12 +96,27 @@ header {
 
 header .user-area {
   display: grid;
-  grid-template-columns: 25px 2fr 1fr;
-  grid-template-rows: 25px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 25px 1fr;
   gap: 10px;
 }
 
-label img {
+.search-box {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  gap: 20px;
+}
+
+.search-box img {
   height: 100%;  
 }
 
+.notifications {
+  grid-column: 3;
+  display: grid;
+  grid-template-rows: 25px;
+}
+
+.notifications img {
+  height: 100%;
+}
