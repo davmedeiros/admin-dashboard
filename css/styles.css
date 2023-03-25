@@ -220,7 +220,8 @@ main {
 }
 
 .card,
-.board {
+.board,
+.pane {
   border: 1px dashed black;
   border-radius: 11px;
   padding: 30px;
@@ -230,7 +231,8 @@ main {
   height: 220px;
 }
 
-.board {
+.board,
+.pane {
   margin-top: 20px;
   font-size: 0.8rem;
   display: grid;
@@ -245,4 +247,21 @@ main {
 .announcement:first-child {
   border: none;
   padding-top: 0;
+}
+
+.trending-user {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.trending-user img {
+  height: 40px;
+  place-self: center;
+}
+
+.username {
+  font-weight: bold;
 }
