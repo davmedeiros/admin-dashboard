@@ -38,12 +38,13 @@
 
 body {
   display: grid;
-  grid-template: 1fr 4fr / 1fr 4fr;
+  grid-template: 170px 1fr / clamp(250px, 20%, 300px) 4fr;
 }
 
 aside {
   outline: 1px dashed blue;
   grid-row: 1 / -1;
+  grid-column: 1 / 2;
   padding: 20px;
   display: grid;
   grid-template: 100px 1fr / 1fr;
@@ -91,6 +92,7 @@ aside a img {
 
 header {
   outline: 1px dashed red;
+  grid-column: 2 / -1;
   display: grid;
   grid-template-rows: 50px 70px;
   padding: 20px;
@@ -198,10 +200,26 @@ button {
 
 main {
   outline: 1px dashed green;
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
   display: grid;
   grid-template: repeat(2, 1fr) / 4fr 1fr;
+  gap: 20px;
+  padding: 20px;
 }
 
 .projects {
   grid-row: 1 / -1;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.card {
+  height: 200px;
+  background-color: red;
 }
