@@ -214,12 +214,35 @@ main {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding-top: 20px;
 }
 
+.card,
+.board {
+  border: 1px dashed black;
+  border-radius: 11px;
+  padding: 30px;
+}
+
 .card {
-  height: 200px;
-  background-color: red;
+  height: 220px;
+}
+
+.board {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  display: grid;
+  gap: 15px;
+}
+
+.announcement {
+  border-top: 1px solid black;
+  padding-top: 15px;
+}
+
+.announcement:first-child {
+  border: none;
+  padding-top: 0;
 }
