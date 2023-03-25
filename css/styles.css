@@ -274,3 +274,19 @@ main {
 .username {
   font-weight: bold;
 }
+
+.card.project {
+  display: grid;
+  grid-template-rows: 25px 100px 50px;
+}
+
+.interactions {
+  display: grid;
+  grid-template-rows: 25px;
+  grid-template-columns: repeat(3, 25px);
+  justify-content: end;
+}
+
+.interactions img {
+  height: 100%;
+}
