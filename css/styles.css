@@ -41,11 +41,6 @@ body {
   grid-template: 1fr 4fr / 1fr 4fr;
 }
 
-main {
-  outline: 1px dashed green;
-  display: grid;
-}
-
 aside {
   outline: 1px dashed blue;
   grid-row: 1 / -1;
@@ -201,3 +196,12 @@ button {
   cursor: pointer;
 }
 
+main {
+  outline: 1px dashed green;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 4fr 1fr;
+}
+
+.projects {
+  grid-row: 1 / -1;
+}
