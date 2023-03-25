@@ -177,3 +177,27 @@ header .user-area {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.actions {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.actions button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 32px;
+  background-color: #1992D4;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
