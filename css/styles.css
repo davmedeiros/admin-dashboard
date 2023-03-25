@@ -43,11 +43,13 @@ body {
 
 aside {
   outline: 1px dashed blue;
+  background-color: #1992D4;
   grid-row: 1 / -1;
   grid-column: 1 / 2;
   padding: 20px;
   display: grid;
   grid-template: 100px 1fr / 1fr;
+  color: white;
 }
 
 .branding {
@@ -57,7 +59,7 @@ aside {
   gap: 10px;
 }
 
-.branding>img {
+.branding > img {
   height: 100%;
   place-self: center;
 }
@@ -229,6 +231,7 @@ main {
 
 .card {
   height: 220px;
+  border-left: 10px solid #FACC15;
 }
 
 .board,
