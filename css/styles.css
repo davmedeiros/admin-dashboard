@@ -5,3 +5,24 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 4fr;
+}
+
+header {
+  outline: 1px dashed red;
+  display: grid;
+}
+
+main {
+  outline: 1px dashed green;
+  display: grid;
+}
+
+aside {
+  outline: 1px dashed blue;
+  display: grid;
+  grid-row: 1 / -1;
+}
