@@ -8,21 +8,28 @@
 
 /* roboto-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* roboto-900 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v30-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin-900.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 :root {
@@ -54,7 +61,7 @@ aside {
   gap: 10px;
 }
 
-.branding > img {
+.branding>img {
   height: 100%;
   place-self: center;
 }
@@ -90,9 +97,9 @@ aside a img {
 header {
   outline: 1px dashed red;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 50px 70px;
   padding: 20px;
-  gap: 20px;
+  gap: 10px;
 }
 
 header .user-area {
@@ -100,7 +107,6 @@ header .user-area {
   grid-template-columns: 4fr 25px 1fr;
   grid-template-rows: 25px 1fr;
   gap: 10px;
-  gap: 20px;
   align-items: center;
 }
 
@@ -111,7 +117,7 @@ header .user-area {
 }
 
 .search-box img {
-  height: 100%;  
+  height: 100%;
 }
 
 .notifications {
@@ -143,5 +149,31 @@ header .user-area {
 .profile a {
   text-decoration: none;
   color: inherit;
+  font-weight: bold;
+}
+
+.action-area {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+}
+
+.greet {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 70px;
+  align-items: center;
+  gap: 10px;
+}
+
+.greet img {
+  place-self: center;
+  height: 100%;
+  background-color: #FACC15;
+  border-radius: 50%;
+}
+
+.greet-text :last-child {
+  font-size: 2rem;
   font-weight: bold;
 }
