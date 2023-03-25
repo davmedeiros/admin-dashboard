@@ -34,11 +34,6 @@ body {
   grid-template: 1fr 4fr / 1fr 4fr;
 }
 
-header {
-  outline: 1px dashed red;
-  display: grid;
-}
-
 main {
   outline: 1px dashed green;
   display: grid;
@@ -90,5 +85,23 @@ aside a img {
 
 .tools {
   margin-top: 50px;
+}
+
+header {
+  outline: 1px dashed red;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
+}
+
+header .user-area {
+  display: grid;
+  grid-template-columns: 25px 2fr 1fr;
+  grid-template-rows: 25px;
+  gap: 10px;
+}
+
+label img {
+  height: 100%;  
 }
 
