@@ -42,7 +42,6 @@ body {
 }
 
 aside {
-  outline: 1px dashed blue;
   background-color: #1992D4;
   grid-row: 1 / -1;
   grid-column: 1 / 2;
@@ -93,7 +92,6 @@ aside a img {
 }
 
 header {
-  outline: 1px dashed red;
   grid-column: 2 / -1;
   display: grid;
   grid-template-rows: 50px 70px;
@@ -117,6 +115,14 @@ header .user-area {
 
 .search-box img {
   height: 100%;
+}
+
+.search-box input {
+  outline: none;
+  border: none;
+  background-color: #E2E8F0;
+  border-radius: 32px;
+  padding: 10px 20px;
 }
 
 .notifications {
@@ -201,13 +207,13 @@ button {
 }
 
 main {
-  outline: 1px dashed green;
   grid-column: 2 / -1;
   grid-row: 2 / -1;
   display: grid;
   grid-template: repeat(2, 1fr) / 4fr 1fr;
   gap: 20px;
   padding: 20px;
+  background-color: #E2E8F0;
 }
 
 .projects {
@@ -224,14 +230,14 @@ main {
 .card,
 .board,
 .pane {
-  border: 1px dashed black;
   border-radius: 11px;
+  background-color: white;
   padding: 30px;
 }
 
 .card {
   height: 220px;
-  border-left: 10px solid #FACC15;
+  border-left: 11px solid #FACC15;
 }
 
 .board,
