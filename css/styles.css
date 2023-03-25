@@ -58,7 +58,7 @@ aside {
   gap: 10px;
 }
 
-.branding > img {
+.branding>img {
   height: 100%;
   place-self: center;
 }
@@ -240,6 +240,12 @@ main {
   border-left: 11px solid #FACC15;
 }
 
+.feeds {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
 .board,
 .pane {
   margin-top: 20px;
@@ -277,7 +283,7 @@ main {
 
 .card.project {
   display: grid;
-  grid-template-rows: 25px 100px 50px;
+  grid-template-rows: 25px 110px 50px;
 }
 
 .interactions {
@@ -285,6 +291,7 @@ main {
   grid-template-rows: 25px;
   grid-template-columns: repeat(3, 25px);
   justify-content: end;
+  gap: 25px;
 }
 
 .interactions img {
