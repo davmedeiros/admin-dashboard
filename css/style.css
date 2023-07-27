@@ -14,3 +14,23 @@
     --accent-color: #5eead4;
     --attention-color: #083344;
 }
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+}
+
+header {
+    background-color: var(--base-color);
+    grid-column: 2 / -1;
+}
+
+aside {
+    background-color: var(--secondary-color);
+    grid-row: 1 / -1;
+}
+
+main {
+    background-color: var(--main-color);
+}
