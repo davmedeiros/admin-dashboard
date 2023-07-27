@@ -33,4 +33,10 @@ aside {
 
 main {
     background-color: var(--main-color);
+    display: grid;
+    grid-template: repeat(2, 1fr) / 4fr 1fr ;
+}
+
+#projects {
+    grid-row: 1 / -1;
 }
