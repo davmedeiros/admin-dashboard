@@ -18,7 +18,7 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template: 200px 1fr / 350px 1fr;
 }
 
 header {
@@ -34,9 +34,26 @@ aside {
 main {
     background-color: var(--main-color);
     display: grid;
-    grid-template: repeat(2, 1fr) / 4fr 1fr ;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 #projects {
     grid-row: 1 / -1;
+}
+
+#projects .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+    height: 100%;
+}
+
+.card {
+    background-color: red;
+}
+
+#trending {
+    grid-column: 2 / -1;
 }
