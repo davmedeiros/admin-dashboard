@@ -77,3 +77,18 @@ main {
 .board {
     min-height: 300px;
 }
+
+aside {
+    padding: 20px;
+}
+
+#branding {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
