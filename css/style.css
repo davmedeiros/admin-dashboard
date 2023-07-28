@@ -13,6 +13,7 @@
     --secondary-color: #ccfbf1;
     --accent-color: #5eead4;
     --attention-color: #083344;
+    --subtle-color: #f0fdfa;
     --gap-size: 40px;
 }
 
@@ -27,6 +28,10 @@ header {
     grid-column: 2 / -1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     z-index: 0;
+    display: grid;
+    grid-template: 60px 1fr / 40px 1fr 500px;
+    padding: 10px var(--gap-size);
+    align-items: center;
 }
 
 aside {
@@ -110,4 +115,22 @@ nav {
     font-size: 1.5rem;
     gap: 10px;
     font-weight: bold;
+}
+
+input {
+    background-color: var(--subtle-color);
+    border: none;
+    border-radius: 32px;
+    padding: 10px;
+    box-shadow: 2px 2px px rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+.small-icon {
+    height: 32px;
+    width: 32px;
 }
