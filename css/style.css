@@ -39,7 +39,7 @@ h2 {
 main {
     background-color: var(--main-color);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 350px;
     padding: 20px var(--gap-size);
     gap: var(--gap-size);
 }
