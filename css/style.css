@@ -55,8 +55,11 @@ main {
     gap: var(--gap-size);
 }
 
-.card {
-    background-color: red;
+.card,
+.board {
+    background-color: var(--base-color);
+    border-radius: 32px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4)
 }
 
 #news {
@@ -68,6 +71,5 @@ main {
 }
 
 .board {
-    background-color: green;
     min-height: 300px;
 }
