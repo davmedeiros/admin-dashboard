@@ -80,6 +80,9 @@ main {
 
 aside {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 #branding {
@@ -91,4 +94,20 @@ aside {
 
 h1 {
     font-size: 2.5rem;
+}
+
+nav {
+    display: grid;
+    gap: 20px;
+}
+
+.nav-item {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    gap: 10px;
+    font-weight: bold;
 }
