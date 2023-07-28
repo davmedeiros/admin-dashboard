@@ -122,7 +122,6 @@ input {
     border: none;
     border-radius: 32px;
     padding: 10px;
-    box-shadow: 2px 2px px rgba(0, 0, 0, 0.4);
 }
 
 input:focus {
@@ -132,5 +131,28 @@ input:focus {
 
 .small-icon {
     height: 32px;
-    width: 32px;
+    aspect-ratio: 1 / 1;
+}
+
+#profile-picture {
+    height: 64px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+}
+
+#user-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#user-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#notifications,
+#profile-picture {
+    cursor: pointer;
 }
