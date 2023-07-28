@@ -59,11 +59,15 @@ main {
     background-color: red;
 }
 
-#feed {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+#news {
+    margin-bottom: 20px;
 }
 
 #trending {
     grid-column: 2 / -1;
+}
+
+.board {
+    background-color: green;
+    min-height: 300px;
 }
