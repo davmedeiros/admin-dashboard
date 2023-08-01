@@ -81,6 +81,7 @@ main {
 
 .board {
     min-height: 300px;
+    padding: 30px;
 }
 
 aside {
@@ -222,4 +223,14 @@ button {
 
 #project-interactions img {
     cursor: pointer;
+}
+
+.announcement {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.announcement:last-of-type{
+    border: none;
 }
