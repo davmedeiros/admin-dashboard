@@ -219,3 +219,7 @@ button {
     align-items: flex-end;
     gap: 16px;
 }
+
+#project-interactions img {
+    cursor: pointer;
+}
