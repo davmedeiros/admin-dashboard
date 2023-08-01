@@ -156,3 +156,30 @@ input:focus {
 #profile-picture {
     cursor: pointer;
 }
+
+#welcome-area {
+    display: flex;
+    gap: 35px;
+}
+
+#welcome-area img {
+    height: 92px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+}
+
+#welcome-area > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+}
+
+#welcome-text {
+    font-size: 0.9rem;
+}
+
+#welcome-username {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
