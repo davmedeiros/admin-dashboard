@@ -183,3 +183,25 @@ input:focus {
     font-weight: bold;
     font-size: 1.8rem;
 }
+
+#interactions-area {
+    grid-column: 3 / -1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    align-items: stretch;
+}
+
+button {
+    cursor: pointer;
+}
+
+#interactions-area button {
+    background-color: var(--accent-color);
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 64px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
