@@ -205,3 +205,17 @@ button {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+.card.project {
+    border-left: 24px solid var(--subtle-color);
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 32px;
+}
+
+#project-interactions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 16px;
+}
