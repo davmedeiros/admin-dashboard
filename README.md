@@ -1,2 +1,1 @@
-# admin-dashboard
-TOP - Admin Dashboard
+# TOP - Educational Project - Admin Dashboard
